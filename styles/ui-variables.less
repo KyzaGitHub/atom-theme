@@ -1,5 +1,7 @@
 // Colors
 
+@main-color1: #7bbe17;
+
 @text-color: #aaa;
 @text-color-subtle: #555;
 @text-color-highlight: #fff;
@@ -51,17 +53,17 @@
 @button-background-color-selected: #5c6064;
 @button-border-color: @base-border-color;
 
-@tab-bar-background-color: #222;
+@tab-bar-background-color: darken(@tab-background-color-active, 20%);
 @tab-bar-border-color: darken(@tab-background-color-active, 10%);
 @tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-background-color-active: @main-color1;
+@tab-border-color: transparent;
 
 @tree-view-background-color: #303030;
 @tree-view-border-color: @tool-panel-border-color;
 
-@scrollbar-background-color: #222425; // Needs to be opaque -> atom/atom/issues/4578
-@scrollbar-color: rgba(92, 92, 92, 0.5);
+@scrollbar-background-color: darken(@main-color1, 30%); // Needs to be opaque -> atom/atom/issues/4578
+@scrollbar-color: lightengit(@scrollbar-background-color, 10%);
 
 @ui-site-color-1: @background-color-success; // green
 @ui-site-color-2: @background-color-info; // blue
@@ -83,7 +85,7 @@
 @component-line-height: 25px;
 @component-border-radius: 2px;
 
-@tab-height: 26px;
+@tab-height: 22px;
 
 
 // Other

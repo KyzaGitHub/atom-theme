@@ -33,7 +33,7 @@
     border: none;
 
     &, &:before, &:after {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+      background-image: -webkit-linear-gradient(top, #222, #222);
       height: @tab-height;
     }
 
@@ -50,7 +50,7 @@
       left: -14px;
       border-top-left-radius: @tab-radius;
       box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
-      -webkit-transform: skewX(-@tab-skew);
+      // -webkit-transform: skewX(-@tab-skew);
     }
 
     // right angled edge
@@ -58,7 +58,7 @@
       right: -14px;
       border-top-right-radius: @tab-radius;
       box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
-      -webkit-transform: skewX(@tab-skew);
+      // -webkit-transform: skewX(@tab-skew);
     }
 
     .close-icon {
